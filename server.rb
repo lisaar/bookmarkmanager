@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'data_mapper'
+require 'rack-flash'
 require './lib/link'
 require './lib/tag'
 require './lib/user'
