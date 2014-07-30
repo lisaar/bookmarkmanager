@@ -1,3 +1,52 @@
 body {
-	background-clor: gray;
+	font-family: Helvetica, Arial, Sans-serif;
+	background-image: url(/images/extra_clean_paper.png)
 }
+
+a.button {
+	display: inline-block;
+	width: 80px;
+	background-color: #82B743;
+	border: 2px solid white;
+	text-decoration: none;
+	padding: 5px 10px;
+	text-align: center;
+	border-radius: 4px;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-shadow: 0 0 2px rgba(0,0,0,0,4);
+}
+
+a.button.highlighted {
+	background-color: #b77843;
+}
+
+header {
+	height: 40px;
+	background-color: #000000;
+	color: white;
+	display: flex;
+	padding: 0 20px;
+}
+
+header > * {
+	margin: auto 0;
+}
+
+header #logo {
+	display: flex;
+	margin-right: 20px;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+header #user-links {
+	flex: 1; 
+	-webkit-flex: 1;
+	text-align: right;
+}
+
+
