@@ -2,6 +2,9 @@ require 'sinatra'
 require 'data_mapper'
 require 'rack-flash'
 require 'sinatra/partial'
+set :root, File.dirname(__FILE__)
+set :public_folder, Proc.new { File.join(root, "..", "public") }
+
 require_relative 'models/link'
 require_relative 'models/tag'
 require_relative 'models/user'
@@ -14,13 +17,10 @@ require_relative 'controllers/links'
 require_relative 'controllers/tags'
 require_relative 'controllers/application'
 
-
-
 enable :sessions
 set :session_secret, 'my unique encryption key!'
 use Rack::Flash
 set :partial_template_engine, :erb
-
 
 
 
